@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
   background-color: var(--dark);
   color: var(--light);
-
   width: 100%;
+  margin: 0 auto;
   max-width: 1200px;
-  margin: 1rem auto;
-
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,17 +16,14 @@ export const Logo = styled.div`
   color: var(--blue);
   font-weight: 500;
   font-size: 2rem;
-  margin-left: 5px;
-
 `
 export const NavStyled = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   list-style: none;
 
-  width: 50%;
+ 
 
   li {
     cursor: pointer;
@@ -58,10 +54,10 @@ export const NavStyled = styled.nav`
   @media (max-width: 957px) {
       display: ${ ( { show } ) => show ? 'block' : 'none' };
       position: fixed;
-      z-index: 4;
+      z-index: 999;
       top: 60px;
       overflow: hidden;
-      width: 100%;
+      width: 100vw;
       padding: 20px;
       text-align: center;
       font-size: 2rem;
