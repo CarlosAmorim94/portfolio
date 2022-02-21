@@ -1,36 +1,56 @@
+import Image from 'next/image';
+
+import embraer from '../../../public/img/embraer.jpg'
+import mara from '../../../public/img/mara.png'
+import doceamor from '../../../public/img/doceamor.png'
+
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 import { Carrousel } from './styles';
 
-export const FadeSlide = () => {
+import { Slide } from 'react-slideshow-image';
+
+export const Slides = () => {
   const fadeImages = [
-    "assets/images/slide_5.jpg",
-    "assets/images/slide_6.jpg",
-    "assets/images/slide_7.jpg"
+    embraer,
+    mara,
+    doceamor,
   ];
+
+  const fadeProperties = {
+    duration: 3000,
+    canSwipe: false,
+  };
 
   return (
     <Carrousel>
-        <Fade>
+        <Slide {...fadeProperties}>
           <div className="each-fade">
             <div>
-              <img src={fadeImages[0]} />
+              <Image src={fadeImages[0]}
+              alt="Foto de perfil"
+              layout="responsive" />
             </div>
             <p>First Slide</p>
           </div>
           <div className="each-fade">
             <p>Second Slide</p>
             <div>
-              <img src={fadeImages[1]} />
+              <Image src={fadeImages[1]}
+              alt="Foto de perfil"
+              layout="responsive" />
             </div>
           </div>
           <div className="each-fade">
             <div>
-              <img src={fadeImages[2]} />
+              <Image src={fadeImages[2]}
+              alt="Foto de perfil"
+              layout="responsive" />
             </div>
             <p>Third Slide</p>
           </div>
-        </Fade>
-      </Carrousel>
+        </Slide>
+    </Carrousel>
   );
 };
