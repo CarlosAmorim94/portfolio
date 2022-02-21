@@ -1,9 +1,11 @@
 import { HeroStyled, TextStyled, ImageStyled } from "./styles";
 
 import Link from "next/link";
+import Image from "next/image";
 import Lottie from 'react-lottie';
 import programming from '../../../public/img/lottie/programming.json'
-//import programming from '../../../public/img/lottie/developer.json'
+import github from '../../../public/img/Github.svg'
+import linkedin from '../../../public/img/LinkedIn.svg'
 
 export const Hero = () => {
 
@@ -19,12 +21,14 @@ export const Hero = () => {
       <div>
         <Link href="https://www.linkedin.com/in/carlosamorim94/" >
           <a>
+            <Image src={linkedin} alt="LinkedIn icon"/>
             Linkedin
           </a>
         </Link>
 
         <Link href="https://github.com/CarlosAmorim94" className="button">
           <a>
+            <Image src={github} alt="GitHub icon"/>
             GitHub
           </a>
         </Link>

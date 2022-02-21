@@ -4,7 +4,7 @@ export const HeroStyled = styled.main`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 90vh;
+  height: 92vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -36,12 +36,20 @@ export const TextStyled = styled.article`
   }
 
   div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 3rem 0 0;
 
     a {
+      width: 250px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       text-decoration: none;
+      justify-content: space-evenly;
       padding: 1rem 2.5rem;
-      background-color: var(--dark-200);
+      background-color: var(--dark);
       color: var(--light);
       border-radius: 5px;
       font-weight: 600;
@@ -54,7 +62,6 @@ export const TextStyled = styled.article`
       transition: all ease 0.5s;
 
       &:hover { // Neon
-        background-color: var(--blue);
         box-shadow: 0 0 30px var(--blue);
       }
     }

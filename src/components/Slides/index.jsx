@@ -19,7 +19,7 @@ export const Slides = () => {
   ];
 
   const fadeProperties = {
-    duration: 3000,
+    duration: 5000,
     canSwipe: false,
   };
 
@@ -27,12 +27,12 @@ export const Slides = () => {
     <Carrousel>
         <Slide {...fadeProperties}>
           <div className="each-fade">
+            <p>First Slide</p>
             <div>
               <Image src={fadeImages[0]}
               alt="Foto de perfil"
               layout="responsive" />
             </div>
-            <p>First Slide</p>
           </div>
           <div className="each-fade">
             <p>Second Slide</p>
@@ -43,12 +43,12 @@ export const Slides = () => {
             </div>
           </div>
           <div className="each-fade">
+            <p>Third Slide</p>
             <div>
               <Image src={fadeImages[2]}
               alt="Foto de perfil"
               layout="responsive" />
             </div>
-            <p>Third Slide</p>
           </div>
         </Slide>
     </Carrousel>
