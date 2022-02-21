@@ -10,20 +10,27 @@ export const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 
 `
 export const Logo = styled.div`
   color: var(--blue);
   font-weight: 500;
   font-size: 2rem;
+
+  @media (max-width: 957px) {
+    margin-left: 20px;
+  }
 `
 export const NavStyled = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
-
- 
 
   li {
     cursor: pointer;
@@ -52,12 +59,14 @@ export const NavStyled = styled.nav`
   }
 
   @media (max-width: 957px) {
-      display: ${ ( { show } ) => show ? 'block' : 'none' };
+      display: ${ ( { show } ) => show ? 'flex' : 'none' };
+      flex-direction: column;
       position: fixed;
       z-index: 999;
       top: 60px;
+      right: 0;
+      left: 0;
       overflow: hidden;
-      width: 100vw;
       padding: 20px;
       text-align: center;
       font-size: 2rem;
@@ -69,6 +78,7 @@ export const Hamburguer = styled.div`
   display: none;
   width: 40px;
   height: 30px;
+  margin-right: 20px ;
   
   .one, .two, .three {
     background-color: white;

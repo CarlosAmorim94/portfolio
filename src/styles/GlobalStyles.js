@@ -25,10 +25,6 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: "Inter", sans-serif;
         background-color: var(--dark);
+        user-select: none;
     }
-
-    a {
-      list-style: none;
-    }
-
 `
