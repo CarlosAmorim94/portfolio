@@ -1,7 +1,9 @@
 import { AboutStyled, ImageStyled, TextArea, } from "./styles";
+import Link from "next/link";
 
 import Image from 'next/image'
 import profilePicture from '../../../public/img/foto.png'
+import downloadIcon from '../../../public/img/icons/download.svg'
 
 
 export const About = () => {
@@ -36,7 +38,18 @@ export const About = () => {
   
       </p>
 
+      <div>
+        <Link 
+        href="https://drive.google.com/file/d/1tU-iZOQbjmGLyKhq09LJeiupnGUaoAo6/view?usp=sharing"
+         >
+            <a target="_blank">
+              <Image src={downloadIcon} alt="LinkedIn icon"/>
+              Curriculo
+            </a>
+        </Link>
+      </div>
     </TextArea>
+
     
   </AboutStyled>
   )

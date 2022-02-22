@@ -21,7 +21,7 @@ export const TextStyled = styled.article`
   
   padding: 2rem 0;
 
-  color: var(--light);
+  color: var(--white);
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -50,7 +50,7 @@ export const TextStyled = styled.article`
       justify-content: space-evenly;
       padding: 1rem 2.5rem;
       background-color: var(--dark);
-      color: var(--light);
+      color: var(--white);
       border-radius: 5px;
       font-weight: 600;
       font-size: 16px;

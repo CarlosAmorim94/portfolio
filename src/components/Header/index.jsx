@@ -1,6 +1,8 @@
-import { HeaderStyled, Logo, Hamburguer, NavStyled } from "./styles";
 import { useState } from "react";
 
+import { HeaderStyled, Logo, Hamburguer, NavStyled } from "./styles";
+import Image from "next/image";
+import logo from '../../../public/img/tag.png'
 
 export const Header = () => {
 
@@ -13,11 +15,14 @@ export const Header = () => {
   return (
   <HeaderStyled>
     <Logo>
-      Portfólio 
+      <Image
+      src={logo}
+      alt="Logotipo fechanto de tag"
+      layout="responsive"
+      /> 
     </Logo>
 
     <NavStyled show={showMenu}>
-      <li>Home</li>
       <li>Sobre</li>
       <li>Experiência</li>
       <li>Projetos</li>

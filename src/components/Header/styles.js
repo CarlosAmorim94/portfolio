@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   background-color: var(--dark);
-  color: var(--light);
+  color: var(--white);
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
@@ -21,6 +21,7 @@ export const Logo = styled.div`
   color: var(--blue);
   font-weight: 500;
   font-size: 2rem;
+  width: 70px;
 
   @media (max-width: 957px) {
     margin-left: 20px;
@@ -45,12 +46,11 @@ export const NavStyled = styled.nav`
       left: 0;
       width: 0;
       height: 2px;
-      background-color: var(--light);
+      background-color: var(--white);
       transition: all ease 0.5s;
     }
 
     &:hover {
-      color: var(--gray-light);
 
       &:after {
         width: 100%;
@@ -81,7 +81,7 @@ export const Hamburguer = styled.div`
   margin-right: 20px ;
   
   .one, .two, .three {
-    background-color: white;
+    background-color: var(--white);
     height: 4px;
     width: 100%;
     margin: 5px auto;

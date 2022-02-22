@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Lottie from 'react-lottie';
 import programming from '../../../public/img/lottie/programming.json'
-import github from '../../../public/img/Github.svg'
-import linkedin from '../../../public/img/LinkedIn.svg'
+import github from '../../../public/img/icons/Github.svg'
+import linkedin from '../../../public/img/icons/LinkedIn.svg'
 
 export const Hero = () => {
 

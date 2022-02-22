@@ -5,13 +5,12 @@ import mara from '../../../public/img/mara.png'
 import doceamor from '../../../public/img/doceamor.png'
 
 import React from 'react';
-import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import { Carrousel } from './styles';
+import { Carrousel, Container } from './styles';
 
 import { Slide } from 'react-slideshow-image';
 
-export const Slides = () => {
+export const Experiences = () => {
   const fadeImages = [
     embraer,
     mara,
@@ -24,33 +23,80 @@ export const Slides = () => {
   };
 
   return (
-    <Carrousel>
-        <Slide {...fadeProperties}>
-          <div className="each-fade">
-            <p>First Slide</p>
-            <div>
-              <Image src={fadeImages[0]}
-              alt="Foto de perfil"
-              layout="responsive" />
+    <Container>
+
+      <h1>Experiências e Freelances</h1>
+
+      <Carrousel>
+          <Slide {...fadeProperties}>
+            <div className="each-fade">
+              <div className="text">
+                <h2>Embraer</h2>
+                <p>
+                Estou desenvolvendo um sistema para automatização do processo em que atuo.
+                </p>
+                <p>
+                Além de executar minhas funções, <span>ganhei vários prêmios de melhoria</span> de processo no
+                “Programa boa ideia”
+                </p> 
+                <p>
+                participando ativamente de Kaizens onde elaborava mapeamento de
+                fluxo de valor, analisava erros em processos e suas soluções, atuei 2 anos na função de
+                “Agente de melhoria contínua”</p>
+                <p> onde fui responsável direto por coordenar e executar essas
+                melhorias junto com a equipe.
+                </p>
+
+                <div>
+                  2013 - atualmente
+                </div>
+              </div>
+              <div className="image">
+                <Image src={fadeImages[0]}
+                alt="Foto de perfil"
+                layout="responsive" />
+              </div>
             </div>
-          </div>
-          <div className="each-fade">
-            <p>Second Slide</p>
-            <div>
-              <Image src={fadeImages[1]}
-              alt="Foto de perfil"
-              layout="responsive" />
+            <div className="each-fade">
+            <div className="text">
+                <h2>Mara Queijos</h2>
+                <p>
+                SPA desenvolvido com ReactJs para exibição dos produtos e contato com a empresa.
+                </p>
+                <p>
+                Fui responsável pelo Desenvolvimento do 0, desde UI, código e deploy.
+                </p>
+                <div>
+                  Freelance - Dez/21 - Jan/22
+                </div>
+              </div>
+              <div className="image">
+                <Image src={fadeImages[1]}
+                alt="Foto de perfil"
+                layout="responsive" />
+              </div>
             </div>
-          </div>
-          <div className="each-fade">
-            <p>Third Slide</p>
-            <div>
-              <Image src={fadeImages[2]}
-              alt="Foto de perfil"
-              layout="responsive" />
+            <div className="each-fade">
+              <div className="text">
+                <h2>Doce Amor - Bolos</h2>
+                <p>
+                SPA desenvolvido com ReactJs para exibição dos produtos e contato com a empresa.
+                </p>
+                <p>
+                Fui responsável pelo Desenvolvimento do 0, desde UI, código e deploy.
+                </p>
+                <div>
+                  Freelance - Out/21 - Nov/21
+                </div>
+              </div>
+              <div className="image">
+                <Image src={fadeImages[2]}
+                alt="Foto de perfil"
+                layout="responsive" />
+              </div>
             </div>
-          </div>
-        </Slide>
-    </Carrousel>
+          </Slide>
+      </Carrousel>
+    </Container>
   );
 };
