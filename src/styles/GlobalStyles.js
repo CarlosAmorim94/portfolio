@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         --white: #FFFFFF;        
     }
 
-    //@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Inter:wght@200;400;700&family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Inter:wght@200;400;700&family=Poppins&display=swap');
 
     * {
         margin: 0;

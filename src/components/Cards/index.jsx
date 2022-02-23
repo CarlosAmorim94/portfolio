@@ -13,7 +13,7 @@ export const Cards = () => {
 
   const cards = [
     {img: project1, name: "PokeNext", link: "https://github.com/CarlosAmorim94/PokeNext", tech: "NextJs, API, Styled-components, "},
-    {img: project2, name: "DT-Money", link: "https://github.com/CarlosAmorim94/DTMoney/tree/main/src", tech: "ReactJs, Typescript, API, Styled-components, ContexAPI, MirageJs"},
+    {img: project2, name: "DT-Money", link: "https://github.com/CarlosAmorim94/DTMoney", tech: "ReactJs, Typescript, API, Styled-components, ContexAPI, MirageJs"},
     {img: project3, name: "Clone da Netflix", link: "https://github.com/CarlosAmorim94/Clone-Netflix", tech: "ReactJs, API, CSS"},
     {img: project4, name: "Ig-News", link: "https://github.com/CarlosAmorim94/IG-News", tech: "NextJs, Typescript, SCSS, Stripe, FaunaDB, auth"},
   ]
@@ -40,7 +40,7 @@ export const Cards = () => {
           </p>
 
           <Link href={card.link}>
-            <a>
+            <a target="_blank">
               <Image src={github} alt="GitHub icon"/>
               <span>Projeto Completo</span>
             </a>

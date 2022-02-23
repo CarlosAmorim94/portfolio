@@ -50,6 +50,7 @@ export const Description = styled.div`
     cursor: pointer;
     letter-spacing: 1px;
     transition: all ease 0.5s;
+    margin-top: 1rem;
 
     span {
       margin-left: .5rem;
