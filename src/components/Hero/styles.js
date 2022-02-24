@@ -24,7 +24,7 @@ export const TextStyled = styled.article`
   @media (max-width: 450px) {
     margin: 3rem auto;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -33,7 +33,7 @@ export const TextStyled = styled.article`
     color: var(--blue);
 
     @media (max-width: 450px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -88,4 +88,9 @@ export const TextStyled = styled.article`
 export const ImageStyled = styled.div`
   width: 600px;
   margin: 0 auto;
+
+  @media (max-width: 450px) {
+   width: 300px ;
+   margin: 0 auto;
+  }
 `
