@@ -2,21 +2,23 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   background-color: var(--dark);
-  color: var(--white);
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 100;
-
 `
+export const Content = styled.div`
+  max-width: 1200px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--white);
+  margin: 0 auto;
+`
+
 export const Logo = styled.div`
   color: var(--blue);
   font-weight: 500;
@@ -31,13 +33,19 @@ export const NavStyled = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style: none;
+  
 
   li {
     cursor: pointer;
     padding: 1rem;
     transition: all ease 0.5s;
     position: relative;
+    list-style: none;
+    
+    a {
+      text-decoration: none;
+      color: var(--white);
+    }
     
     &:after {
       content: '';

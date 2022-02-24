@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const AboutStyled = styled.section`
   width: 100%;
+  height: 78vh;
   max-width: 1200px;
-  margin: 0 auto 3rem;
+  margin:  auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

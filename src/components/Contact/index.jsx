@@ -1,12 +1,14 @@
 import Lottie from "react-lottie"
-import Link from "next/link"
 
-import { Contacts, Container, Emailform, } from "./styles"
+import { Contacts, Container, Emailform, Socials, IconsStyled } from "./styles"
 import EmailMessage from '../../../public/img/lottie/email.json'
+import { SiWhatsapp } from 'react-icons/si';
+import { SiLinkedin } from 'react-icons/si';
+import { AiOutlineMail } from 'react-icons/ai'
 
 export const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
 
       <h1>Entre em contato!</h1>
 
@@ -59,17 +61,26 @@ export const Contact = () => {
             placeholder="Digite uma mensagem..."/>
             
             <button type="submit">
+              <AiOutlineMail />
               Enviar!
             </button>
+
+            <Socials>
+              <h2>Ou por redes sociais:</h2>
+              <a href="https://api.whatsapp.com/send?phone=5514998057785" _blank="true">
+                <SiWhatsapp className="whatsapp" />
+              </a>
+              <a href="https://www.linkedin.com/in/carlosamorim94/">
+                <SiLinkedin className="linkedin" />
+              </a>
+              
+            </Socials>
 
           </form>
 
         </Emailform>
 
-        <div>
-          Whatsapp
-          Linkedin
-        </div>
+        
 
       </Contacts>
     </Container>

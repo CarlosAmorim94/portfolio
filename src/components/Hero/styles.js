@@ -71,6 +71,4 @@ export const TextStyled = styled.article`
 export const ImageStyled = styled.div`
   width: 600px;
   margin: 0 auto;
-  
- 
 `

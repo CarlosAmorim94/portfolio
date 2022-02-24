@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
+  height: 78vh;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 
   h1 {
     color: var(--blue);
@@ -22,8 +22,6 @@ export const Carrousel = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
- 
-  
 
   .each-fade {
     display: flex;
@@ -58,8 +56,6 @@ export const Carrousel = styled.div`
         margin-top: 1rem;
         color: var(--blue);
       }
-
-
     }
 
     .image {
@@ -92,6 +88,6 @@ export const Carrousel = styled.div`
       width: 100%;
       background-color: transparent;
     }
-}
+  }
 
 `

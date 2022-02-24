@@ -22,4 +22,9 @@ export const GlobalStyle = createGlobalStyle`
         background-color: var(--dark);
         user-select: none;
     }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
 `

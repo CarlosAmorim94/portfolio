@@ -10,7 +10,7 @@ export const About = () => {
 
 
   return (
-  <AboutStyled>
+  <AboutStyled id="about">
     <ImageStyled>
       <Image
       className="neom"
@@ -21,7 +21,7 @@ export const About = () => {
     </ImageStyled>
 
     <TextArea>
-      <h1>Sobre</h1>
+      <h1 >Sobre</h1>
 
       <p>
       Desde pequeno sempre fui <span>fascinado por tecnologia</span>, meus olhos brilhavam quando um software ou site inovador/facilitador era lançado! Faz um tempo que dei asas ao sonho de me tornar um desenvolvedor que inova e facilita o dia a dia das pessoas!
