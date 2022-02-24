@@ -37,14 +37,14 @@ export const Hero = () => {
 
     
     <ImageStyled>
-    <Lottie
-      options={{
-        loop: true,
-        autoplay: true,
-        speed: 1,
-        animationData: programming,
-      }}
-        />
+      <Lottie
+        options={{
+          loop: true,
+          autoplay: true,
+          speed: 1,
+          animationData: programming,
+        }}
+          />
     </ImageStyled>
     
   </HeroStyled>

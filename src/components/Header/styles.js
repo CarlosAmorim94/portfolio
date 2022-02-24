@@ -25,14 +25,14 @@ export const Logo = styled.div`
   font-size: 2rem;
   width: 70px;
 
-  @media (max-width: 957px) {
+  @media (max-width: 450px) {
     margin-left: 20px;
   }
 `
 export const NavStyled = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   
 
   li {
@@ -66,7 +66,7 @@ export const NavStyled = styled.nav`
     }
   }
 
-  @media (max-width: 957px) {
+  @media (max-width: 450px) {
       display: ${ ( { show } ) => show ? 'flex' : 'none' };
       flex-direction: column;
       position: fixed;
@@ -86,7 +86,7 @@ export const Hamburguer = styled.div`
   display: none;
   width: 40px;
   height: 30px;
-  margin-right: 20px ;
+  
   
   .one, .two, .three {
     background-color: var(--white);
@@ -98,7 +98,7 @@ export const Hamburguer = styled.div`
 
   }
 
-  @media (max-width: 957px) {
+  @media (max-width: 450px) {
     display: block;
     margin-right: 20px;
   }

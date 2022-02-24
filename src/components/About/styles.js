@@ -9,11 +9,6 @@ export const AboutStyled = styled.section`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
-  @media (max-width: 957px) {
-    display: flex;
-    flex-direction: column;
-  }
 `
 export const ImageStyled = styled.div`
   width: 500px;

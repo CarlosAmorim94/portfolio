@@ -1,6 +1,6 @@
 import Lottie from "react-lottie"
 
-import { Contacts, Container, Emailform, Socials, IconsStyled } from "./styles"
+import { Contacts, Container, Emailform, Socials, ImageStyled } from "./styles"
 import EmailMessage from '../../../public/img/lottie/email.json'
 import { SiWhatsapp } from 'react-icons/si';
 import { SiLinkedin } from 'react-icons/si';
@@ -16,7 +16,7 @@ export const Contact = () => {
 
         <Emailform>
 
-          <div>
+          <ImageStyled>
             <Lottie
               options={{
                 loop: true,
@@ -25,7 +25,7 @@ export const Contact = () => {
                 animationData: EmailMessage,
               }}
             />        
-          </div>
+          </ImageStyled>
           
           <form action="https://formsubmit.co/carlos.av.amorim@gmail.com" method="POST">
             

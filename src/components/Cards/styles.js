@@ -7,6 +7,10 @@ export const Content = styled.article`
   justify-content: center;
   margin: 1rem auto;
 
+  @media (max-width: 450px) {
+    width: 90%;
+  }
+
 `
 
 export const ImageStyled = styled.div`

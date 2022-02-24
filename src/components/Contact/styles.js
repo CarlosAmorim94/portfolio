@@ -17,6 +17,12 @@ export const Container = styled.section`
     margin-bottom: 20px;
   }
 
+  @media (max-width: 450px) {
+    h1 {
+      text-align: center;
+    }
+  }
+
 `
 export const Contacts = styled.div`
   width: 100%;
@@ -31,6 +37,7 @@ export const Emailform = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+
 
   h2 {
     color: var(--blue);
@@ -107,6 +114,10 @@ export const Emailform = styled.div`
         box-shadow: 0 0 30px var(--blue);
       }
     }
+
+    @media (max-width: 450px) {
+      width: 90%;
+    }
   }
 `
 export const Socials = styled.div`
@@ -143,5 +154,21 @@ export const Socials = styled.div`
     &:hover {
       color: #0A66C2;
     }
+  }
+
+  @media (max-width: 450px) {
+    width: 80%;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  
+`
+export const ImageStyled = styled.div`
+  width: 50%;
+
+  @media (max-width: 450px) {
+    display: none;
   }
 `
