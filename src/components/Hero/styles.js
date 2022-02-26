@@ -93,4 +93,9 @@ export const ImageStyled = styled.div`
    width: 300px ;
    margin: 0 auto;
   }
+
+  @media (max-width: 1150px) {
+   width: 400px ;
+   margin: 0 auto;
+  }
 `

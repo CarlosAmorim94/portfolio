@@ -4,18 +4,24 @@ export const AboutStyled = styled.section`
   width: 100%;
   height: 78vh;
   max-width: 1200px;
-  margin:  auto;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 450px) {
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+  }
 `
 export const ImageStyled = styled.div`
   width: 500px;
   border-radius: 50%;
   transition: all ease 0.3s;
 
-  .neom {
+  .neon {
     border-radius: 50%;
   }
 
@@ -23,6 +29,16 @@ export const ImageStyled = styled.div`
     border-radius: 50%;
     z-index: 99;
     box-shadow: 0 0 50px var(--blue);
+  }
+
+  @media (max-width: 450px) {
+    width: 80%;
+    text-align: center;
+  }
+
+  @media (max-width: 1030px) {
+    width: 50%;
+    margin: 0;
   }
 
 `
@@ -82,6 +98,22 @@ export const TextArea = styled.div`
       &:hover { // Neon
         box-shadow: 0 0 30px var(--blue);
       }
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    width: 60%;
+    
+    p {
+      font-size: 1rem;
     }
   }
 `

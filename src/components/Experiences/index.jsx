@@ -57,15 +57,16 @@ export const Experiences = () => {
                 layout="responsive" />
               </div>
             </div>
+
             <div className="each-fade">
-            <div className="text">
-                <h2>Mara Queijos</h2>
-                <p>
-                SPA desenvolvido com ReactJs para exibição dos produtos e contato com a empresa.
-                </p>
-                <p>
-                Fui responsável pelo Desenvolvimento do 0, desde UI, código e deploy.
-                </p>
+               <div className="text">
+                  <h2>Mara Queijos</h2>
+                  <p>
+                  SPA desenvolvido com ReactJs para exibição dos produtos e contato com a empresa.
+                  </p>
+                  <p>
+                  Fui responsável pelo Desenvolvimento do 0, desde UI, código e deploy.
+                  </p>
                 <div>
                   Freelance - Dez/21 - Jan/22
                 </div>
@@ -76,6 +77,7 @@ export const Experiences = () => {
                 layout="responsive" />
               </div>
             </div>
+
             <div className="each-fade">
               <div className="text">
                 <h2>Doce Amor - Bolos</h2>

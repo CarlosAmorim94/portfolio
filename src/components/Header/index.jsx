@@ -3,6 +3,7 @@ import { useState } from "react";
 import { HeaderStyled, Logo, Hamburguer, NavStyled, Content } from "./styles";
 import Image from "next/image";
 import logo from '../../../public/img/tag.png'
+import Link from "next/link";
 
 export const Header = () => {
 
@@ -16,11 +17,14 @@ export const Header = () => {
   <HeaderStyled>
     <Content>
       <Logo>
-        <Image
-        src={logo}
-        alt="Logotipo fechanto de tag"
-        layout="responsive"
-        /> 
+        <Link href="/"><a>
+          <Image
+          src={logo}
+          alt="Logotipo fechanto de tag"
+          layout="responsive"
+          />
+          </a>
+        </Link>
       </Logo>
 
       <NavStyled show={showMenu}>

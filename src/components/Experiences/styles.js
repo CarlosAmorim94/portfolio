@@ -4,7 +4,7 @@ export const Container = styled.section`
   width: 100%;
   height: 78vh;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,15 @@ export const Carrousel = styled.div`
 
   .each-fade {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+
+    @media (max-width: 670px) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0 auto;
+    }
 
     .text {
       color: var(--white);
@@ -39,6 +47,10 @@ export const Carrousel = styled.div`
       align-items: center;
       margin: 0;
 
+      @media (max-width: 670px) {
+        width: 100%;
+      }
+
       h2 {
         color: var(--blue);
         margin-bottom: 1rem;
@@ -50,16 +62,25 @@ export const Carrousel = styled.div`
         span {
           color: var(--blue);
         }
+
+        @media (max-width: 670px) {
+          font-size: 14px;
+        }
       }
 
       div {
         margin-top: 1rem;
         color: var(--blue);
       }
+      
     }
 
     .image {
       width: 70%;
+
+      @media (max-width: 670px) {
+        width: 100%;
+      }
 
       img {
         width: 100%;

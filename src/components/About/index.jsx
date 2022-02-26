@@ -13,7 +13,7 @@ export const About = () => {
   <AboutStyled id="about">
     <ImageStyled>
       <Image
-      className="neom"
+      className="neon"
       src={profilePicture}
       alt="Foto de perfil"
       layout="responsive"
