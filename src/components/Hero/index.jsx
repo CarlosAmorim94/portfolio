@@ -1,4 +1,5 @@
 import { HeroStyled, TextStyled, ImageStyled } from "./styles";
+import { motion } from "framer-motion"
 
 import Link from "next/link";
 import Image from "next/image";
@@ -16,15 +17,13 @@ export const Hero = () => {
     <TextStyled
     initial={{
       opacity: 0,
-      y: '-100vh',
     }}
     animate={{
       opacity: 1,
-      y:0,
     }}
     transition={{
       duration: 2,
-      type: 'spring'
+      delay: 0.8
     }}
     >
 
@@ -34,23 +33,60 @@ export const Hero = () => {
 
       <div>
         <Link href="https://www.linkedin.com/in/carlosamorim94/" >
-          <a>
+          <motion.a
+          initial={{
+            opacity: 0,
+            y: 250
+          }}
+          animate={{
+            opacity: 1,
+            y: 0
+          }}
+          transition={{
+            duration: 1,
+            delay: 2.1,
+            duration: 1,
+          }}>
             <Image src={linkedin} alt="LinkedIn icon"/>
             Linkedin
-          </a>
+          </motion.a>
         </Link>
 
         <Link href="https://github.com/CarlosAmorim94" className="button">
-          <a>
+        <motion.a
+          initial={{
+            opacity: 0,
+            y: 250
+          }}
+          animate={{
+            opacity: 1,
+            y: 0
+          }}
+          transition={{
+            duration: 2,
+            delay: 2.3,
+            duration: 1,
+          }}>
             <Image src={github} alt="GitHub icon"/>
             GitHub
-          </a>
+          </motion.a>
         </Link>
       </div>
     </TextStyled>
 
     
-    <ImageStyled>
+    <ImageStyled
+       
+      initial={{
+        opacity: 0
+      }}
+      animate={{
+        opacity: 1
+      }}
+      transition={{
+        duration: 3,
+        delay: 1.5
+      }}>
       <Lottie
         options={{
           loop: true,

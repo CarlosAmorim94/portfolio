@@ -14,6 +14,7 @@ export const HeroStyled = styled.main`
 
 export const TextStyled = styled(motion.article)`
   width: 550px;
+  height: 500px;
   padding: 2rem 0;
   color: var(--white);
   font-style: normal;
@@ -25,6 +26,7 @@ export const TextStyled = styled(motion.article)`
   @media (max-width: 450px) {
     margin: 3rem auto;
     width: 100%;
+    height: auto;
     font-size: 1.2rem;
     text-align: center;
   }
@@ -86,7 +88,7 @@ export const TextStyled = styled(motion.article)`
   }
 
 `
-export const ImageStyled = styled.div`
+export const ImageStyled = styled(motion.div)`
   width: 600px;
   margin: 0 auto;
 
