@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion"
 
 export const HeroStyled = styled.main`
   width: 100vw;
@@ -11,7 +12,7 @@ export const HeroStyled = styled.main`
   justify-content: space-between;
 `
 
-export const TextStyled = styled.article`
+export const TextStyled = styled(motion.article)`
   width: 550px;
   padding: 2rem 0;
   color: var(--white);

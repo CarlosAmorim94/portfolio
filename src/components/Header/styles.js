@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion'
 
 export const HeaderStyled = styled.header`
   background-color: var(--dark);
@@ -19,7 +20,7 @@ export const Content = styled.div`
   margin: 0 auto;
 `
 
-export const Logo = styled.div`
+export const Logo = styled(motion.div)`
   color: var(--blue);
   font-weight: 500;
   font-size: 2rem;

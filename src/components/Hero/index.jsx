@@ -7,12 +7,26 @@ import programming from '../../../public/img/lottie/programming.json'
 import github from '../../../public/img/icons/Github.svg'
 import linkedin from '../../../public/img/icons/LinkedIn.svg'
 
+
 export const Hero = () => {
 
 
   return (
   <HeroStyled>
-    <TextStyled>
+    <TextStyled
+    initial={{
+      opacity: 0,
+      y: '-100vh',
+    }}
+    animate={{
+      opacity: 1,
+      y:0,
+    }}
+    transition={{
+      duration: 2,
+      type: 'spring'
+    }}
+    >
 
       Olá, eu sou <br/>
       <span>CARLOS AMORIM</span>

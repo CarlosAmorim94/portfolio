@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from 'framer-motion'
 
 import { HeaderStyled, Logo, Hamburguer, NavStyled, Content } from "./styles";
 import Image from "next/image";
@@ -16,7 +17,21 @@ export const Header = () => {
   return (
   <HeaderStyled>
     <Content>
-      <Logo>
+      <Logo
+        initial={{
+          y: '-250',
+          opacity: 0
+        }}
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        transition={{
+          duration: 1,
+          type: 'spring',
+          stiffness: 80
+        }}
+      >
         <Link href="/"><a>
           <Image
           src={logo}
@@ -28,10 +43,65 @@ export const Header = () => {
       </Logo>
 
       <NavStyled show={showMenu}>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#experiences">Experiência</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <motion.li 
+        initial={{
+          y: '-250',
+          opacity: 0
+        }}
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        transition={{
+          duration: .5,
+          type: 'spring',
+          delay: 0.1
+        }}><a href="#about">Sobre</a></motion.li>
+
+        <motion.li
+         initial={{
+          y: '-250',
+          opacity: 0
+        }}
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        transition={{
+          duration: .5,
+          type: 'spring',
+          delay: 0.2
+        }}><a href="#experiences">Experiência</a></motion.li>
+
+        <motion.li
+         initial={{
+          y: '-250',
+          opacity: 0
+        }}
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        transition={{
+          duration: .5,
+          type: 'spring',
+          delay: 0.3
+        }}><a href="#projects">Projetos</a></motion.li>
+        <motion.li
+         
+         initial={{
+          y: '-250',
+          opacity: 0
+        }}
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        transition={{
+          duration: .5,
+          type: 'spring',
+          delay: 0.4
+        }}><a href="#contact">Contato</a></motion.li>
       </NavStyled>
 
       <Hamburguer onClick={toogleMenu}>
