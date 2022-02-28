@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion'
 
 export const AboutStyled = styled.section`
   width: 100%;
@@ -16,7 +17,7 @@ export const AboutStyled = styled.section`
     flex-wrap: wrap;
   }
 `
-export const ImageStyled = styled.div`
+export const ImageStyled = styled(motion.div)`
   width: 500px;
   border-radius: 50%;
   transition: all ease 0.3s;
