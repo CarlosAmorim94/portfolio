@@ -32,8 +32,8 @@ export const Hero = () => {
       <br/> Desenvolvedor Front-End
 
       <div>
-        <Link href="https://www.linkedin.com/in/carlosamorim94/" >
-          <motion.a
+  
+          <motion.a href="https://www.linkedin.com/in/carlosamorim94/"
           initial={{
             opacity: 0,
             y: 250
@@ -50,10 +50,8 @@ export const Hero = () => {
             <Image src={linkedin} alt="LinkedIn icon"/>
             Linkedin
           </motion.a>
-        </Link>
-
-        <Link href="https://github.com/CarlosAmorim94" className="button">
-        <motion.a
+      
+        <motion.a className="button" href="https://github.com/CarlosAmorim94"
           initial={{
             opacity: 0,
             y: 250
@@ -70,7 +68,7 @@ export const Hero = () => {
             <Image src={github} alt="GitHub icon"/>
             GitHub
           </motion.a>
-        </Link>
+
       </div>
     </TextStyled>
 
