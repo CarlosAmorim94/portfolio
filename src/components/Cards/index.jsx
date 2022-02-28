@@ -2,7 +2,7 @@ import project1 from '../../../public/img/projects/pokenext.png'
 import project2 from '../../../public/img/projects/dtmoney.png'
 import project3 from '../../../public/img/projects/netflix.png'
 import project4 from '../../../public/img/projects/ignews.png'
-import github from '../../../public/img/icons/Github.svg'
+import github from '../../../public/img/icons/GitHub.svg'
 
 
 import Image from "next/image"
