@@ -60,7 +60,7 @@ export const Contact = () => {
             name="name" 
             placeholder="Digite seu nome"
             //motion bellow
-            initial={{ opacity: 0, x: 350 }}
+            initial={{ opacity: 0, x: '100vw' }}
             whileInView={{ opacity: 1, x: 0 }} //onScroll
             transition={{ duration: 3, delay: 1 ,type: 'spring',
             stiffness: 30 }}
@@ -73,7 +73,7 @@ export const Contact = () => {
             name="email" 
             placeholder="Digite seu email"
             //motion bellow
-            initial={{ opacity: 0, x: '-350' }}
+            initial={{ opacity: 0, x: '0vw' }}
             whileInView={{ opacity: 1, x: 0 }} //onScroll
             transition={{ duration: 3, delay: 1.5 ,type: 'spring',
             stiffness: 30 }}
@@ -85,7 +85,7 @@ export const Contact = () => {
             name="subject" 
             placeholder="Assunto"
             //motion bellow
-            initial={{ opacity: 0, x: 350 }}
+            initial={{ opacity: 0, x: '100vw' }}
             whileInView={{ opacity: 1, x: 0 }} //onScroll
             transition={{ duration: 3, delay: 2 ,type: 'spring',
             stiffness: 30 }}
@@ -96,7 +96,7 @@ export const Contact = () => {
             name="message" 
             placeholder="Digite uma mensagem..."
             //motion bellow
-            initial={{ opacity: 0, x: '-350' }}
+            initial={{ opacity: 0, x: '0vw' }}
             whileInView={{ opacity: 1, x: 0 }} //onScroll
             transition={{ duration: 3, delay: 2.5 ,type: 'spring',
             stiffness: 30 }}
@@ -104,7 +104,7 @@ export const Contact = () => {
             />
             
             <motion.button type="submit"
-            initial={{ opacity: 0, x: 350 }}
+            initial={{ opacity: 0, x: '100vw' }}
             whileInView={{ opacity: 1, x: 0 }} //onScroll
             transition={{ duration: 3, delay: 3 ,type: 'spring',
             stiffness: 30 }}
@@ -115,7 +115,7 @@ export const Contact = () => {
             </motion.button>
 
             <Socials
-            initial={{ opacity: 0, x: '-350' }}
+            initial={{ opacity: 0, x: '0vw' }}
             whileInView={{ opacity: 1, x: 0 }} //onScroll
             transition={{ duration: 3, delay: 3.5, type: 'spring',
             stiffness: 30 }}

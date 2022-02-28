@@ -38,7 +38,7 @@ export const About = () => {
       </motion.h1>
         
       <motion.p
-        initial={{ opacity: 0, x: '-350' }}
+        initial={{ opacity: 0, x: '0vw' }}
         whileInView={{ opacity: 1, x: 0 }} //onScroll
         transition={{ duration: 3, delay: 1.2 ,type: 'spring',
         stiffness: 30 }}
@@ -48,7 +48,7 @@ export const About = () => {
       </motion.p>
 
       <motion.p
-        initial={{ opacity: 0, x: 350 }}
+        initial={{ opacity: 0, x: '100vw' }}
         whileInView={{ opacity: 1, x: 0 }} //onScroll
         transition={{ duration: 3, delay: 1.7 ,type: 'spring',
         stiffness: 30 }}
@@ -58,7 +58,7 @@ export const About = () => {
       </motion.p>
 
       <motion.p
-        initial={{ opacity: 0, x: '-350' }}
+        initial={{ opacity: 0, x: '0vw' }}
         whileInView={{ opacity: 1, x: 0 }} //onScroll
         transition={{ duration: 3, delay: 2.2 ,type: 'spring',
         stiffness: 30 }}
