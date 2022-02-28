@@ -38,8 +38,8 @@ export const About = () => {
       </motion.h1>
         
       <motion.p
-        initial={{ opacity: 0, x: '0vw' }}
-        whileInView={{ opacity: 1, x: 0 }} //onScroll
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} //onScroll
         transition={{ duration: 3, delay: 1.2 ,type: 'spring',
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
@@ -48,8 +48,8 @@ export const About = () => {
       </motion.p>
 
       <motion.p
-        initial={{ opacity: 0, x: '100vw' }}
-        whileInView={{ opacity: 1, x: 0 }} //onScroll
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} //onScroll
         transition={{ duration: 3, delay: 1.7 ,type: 'spring',
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
@@ -58,8 +58,8 @@ export const About = () => {
       </motion.p>
 
       <motion.p
-        initial={{ opacity: 0, x: '0vw' }}
-        whileInView={{ opacity: 1, x: 0 }} //onScroll
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}} //onScroll
         transition={{ duration: 3, delay: 2.2 ,type: 'spring',
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
@@ -73,7 +73,7 @@ export const About = () => {
       <motion.div
         initial={{ opacity: 0, y: 350 }}
         whileInView={{ opacity: 1, y: 0 }} //onScroll
-        transition={{ duration: 3 ,type: 'spring',
+        transition={{ duration: 3 , type: 'spring',
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
       >

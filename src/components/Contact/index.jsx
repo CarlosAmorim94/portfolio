@@ -48,7 +48,7 @@ export const Contact = () => {
             <input
             type="hidden"
             name="_next"
-            value="https:localhost:3000/emailsent" />
+            value="https://carlosamorim.vercel.app/emailsent" />
 
             <input
             type="hidden"
@@ -60,8 +60,8 @@ export const Contact = () => {
             name="name" 
             placeholder="Digite seu nome"
             //motion bellow
-            initial={{ opacity: 0, x: '100vw' }}
-            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            initial={{ opacity: 0, opacity: 0 }}
+            whileInView={{ opacity: 1, opacity: 1 }} //onScroll
             transition={{ duration: 3, delay: 1 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
@@ -73,8 +73,8 @@ export const Contact = () => {
             name="email" 
             placeholder="Digite seu email"
             //motion bellow
-            initial={{ opacity: 0, x: '0vw' }}
-            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            initial={{ opacity: 0, opacity: 0 }}
+            whileInView={{ opacity: 1, opacity: 1 }} //onScroll
             transition={{ duration: 3, delay: 1.5 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
@@ -85,8 +85,8 @@ export const Contact = () => {
             name="subject" 
             placeholder="Assunto"
             //motion bellow
-            initial={{ opacity: 0, x: '100vw' }}
-            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            initial={{ opacity: 0, opacity: 0 }}
+            whileInView={{ opacity: 1, opacity: 1 }} //onScroll
             transition={{ duration: 3, delay: 2 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time/
@@ -96,16 +96,16 @@ export const Contact = () => {
             name="message" 
             placeholder="Digite uma mensagem..."
             //motion bellow
-            initial={{ opacity: 0, x: '0vw' }}
-            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            initial={{ opacity: 0, opacity: 0 }}
+            whileInView={{ opacity: 1, opacity: 1 }} //onScroll
             transition={{ duration: 3, delay: 2.5 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
             />
             
             <motion.button type="submit"
-            initial={{ opacity: 0, x: '100vw' }}
-            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            initial={{ opacity: 0, opacity: 0 }}
+            whileInView={{ opacity: 1, opacity: 1 }} //onScroll
             transition={{ duration: 3, delay: 3 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
@@ -115,8 +115,8 @@ export const Contact = () => {
             </motion.button>
 
             <Socials
-            initial={{ opacity: 0, x: '0vw' }}
-            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            initial={{ opacity: 0, opacity: 0 }}
+            whileInView={{ opacity: 1, opacity: 1 }} //onScroll
             transition={{ duration: 3, delay: 3.5, type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
