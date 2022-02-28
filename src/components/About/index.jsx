@@ -40,7 +40,7 @@ export const About = () => {
       <motion.p
         initial={{ opacity: 0, x: '-350' }}
         whileInView={{ opacity: 1, x: 0 }} //onScroll
-        transition={{ duration: 3, delay: 1 ,type: 'spring',
+        transition={{ duration: 3, delay: 1.2 ,type: 'spring',
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
       >
@@ -50,7 +50,7 @@ export const About = () => {
       <motion.p
         initial={{ opacity: 0, x: 350 }}
         whileInView={{ opacity: 1, x: 0 }} //onScroll
-        transition={{ duration: 3, delay: 1.5 ,type: 'spring',
+        transition={{ duration: 3, delay: 1.7 ,type: 'spring',
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
       >
@@ -60,7 +60,7 @@ export const About = () => {
       <motion.p
         initial={{ opacity: 0, x: '-350' }}
         whileInView={{ opacity: 1, x: 0 }} //onScroll
-        transition={{ duration: 3, delay: 2 ,type: 'spring',
+        transition={{ duration: 3, delay: 2.2 ,type: 'spring',
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
       >

@@ -9,6 +9,7 @@ import 'react-slideshow-image/dist/styles.css'
 import { Carrousel, Container } from './styles';
 
 import { Slide } from 'react-slideshow-image';
+import { motion } from 'framer-motion';
 
 export const Experiences = () => {
   const fadeImages = [
@@ -25,7 +26,15 @@ export const Experiences = () => {
   return (
     <Container id="experiences">
 
-      <h1>Experiências e Freelances</h1>
+      <motion.h1
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }} //onScroll
+        transition={{ duration: 1, delay: 0.5, type: 'spring',
+        stiffness: 80 }}
+        viewport={{ once: true }} // only one time
+      >
+        Experiências e Freelances
+      </motion.h1>
 
       <Carrousel>
           <Slide {...fadeProperties}>
@@ -40,7 +49,7 @@ export const Experiences = () => {
                 “Programa boa ideia”
                 </p> 
                 <p>
-                participando ativamente de Kaizens onde elaborava mapeamento de
+                participando de Kaizens, elaborando mapeamento de
                 fluxo de valor, analisava erros em processos e suas soluções, atuei 2 anos na função de
                 “Agente de melhoria contínua”</p>
                 <p> onde fui responsável direto por coordenar e executar essas

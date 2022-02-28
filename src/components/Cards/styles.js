@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion'
 
-export const Content = styled.article`
+export const Content = styled(motion.article)`
   width: 500px;
   display: flex;
   flex-direction: column;

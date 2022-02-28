@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.section`
   width: 100%;
@@ -24,7 +25,7 @@ export const Container = styled.section`
   }
 
 `
-export const Contacts = styled.div`
+export const Contacts = styled(motion.div)`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -120,7 +121,7 @@ export const Emailform = styled.div`
     }
   }
 `
-export const Socials = styled.div`
+export const Socials = styled(motion.div)`
   color: var(--blue);
   display: flex;
   flex-direction: row;
@@ -165,7 +166,7 @@ export const Socials = styled.div`
   }
   
 `
-export const ImageStyled = styled.div`
+export const ImageStyled = styled(motion.div)`
   width: 50%;
 
   @media (max-width: 450px) {

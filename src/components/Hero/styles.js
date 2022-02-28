@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 
 export const HeroStyled = styled.main`
   width: 100vw;
+  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  height: 92vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -93,7 +93,7 @@ export const ImageStyled = styled(motion.div)`
   margin: 0 auto;
 
   @media (max-width: 450px) {
-   width: 300px ;
+   width: 250px ;
    margin: 0 auto;
   }
 

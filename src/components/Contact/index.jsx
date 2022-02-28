@@ -5,18 +5,32 @@ import EmailMessage from '../../../public/img/lottie/email.json'
 import { SiWhatsapp } from 'react-icons/si';
 import { SiLinkedin } from 'react-icons/si';
 import { AiOutlineMail } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 export const Contact = () => {
   return (
     <Container id="contact">
 
-      <h1>Entre em contato!</h1>
+      <motion.h1
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }} //onScroll
+        transition={{ duration: 1, delay: 0.5, type: 'spring',
+        stiffness: 80 }}
+        viewport={{ once: true }} // only one time
+      >
+        Entre em contato!
+      </motion.h1>
 
       <Contacts>
 
         <Emailform>
 
-          <ImageStyled>
+          <ImageStyled
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }} //onScroll
+            transition={{ duration: 2 }}
+            viewport={{ once: true }} // only one time
+          >
             <Lottie
               options={{
                 loop: true,
@@ -41,31 +55,72 @@ export const Contact = () => {
             name="_autoresponse"
             value="Recebi sua mensagem, muito obrigado por entrar em contato! Responderei o mais rápido possível..." />
             
-            <input 
+            <motion.input 
             type="text" 
             name="name" 
-            placeholder="Digite seu nome"/>
+            placeholder="Digite seu nome"
+            //motion bellow
+            initial={{ opacity: 0, x: 350 }}
+            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            transition={{ duration: 3, delay: 1 ,type: 'spring',
+            stiffness: 30 }}
+            viewport={{ once: true }} // only one time
 
-            <input 
+            />
+
+            <motion.input 
             type="email" 
             name="email" 
-            placeholder="Digite seu email"/>
+            placeholder="Digite seu email"
+            //motion bellow
+            initial={{ opacity: 0, x: '-350' }}
+            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            transition={{ duration: 3, delay: 1.5 ,type: 'spring',
+            stiffness: 30 }}
+            viewport={{ once: true }} // only one time
+            />
 
-            <input 
+            <motion.input 
             type="text" 
             name="subject" 
-            placeholder="Assunto"/>
+            placeholder="Assunto"
+            //motion bellow
+            initial={{ opacity: 0, x: 350 }}
+            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            transition={{ duration: 3, delay: 2 ,type: 'spring',
+            stiffness: 30 }}
+            viewport={{ once: true }} // only one time/
+            />
 
-            <textarea  
+            <motion.textarea  
             name="message" 
-            placeholder="Digite uma mensagem..."/>
+            placeholder="Digite uma mensagem..."
+            //motion bellow
+            initial={{ opacity: 0, x: '-350' }}
+            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            transition={{ duration: 3, delay: 2.5 ,type: 'spring',
+            stiffness: 30 }}
+            viewport={{ once: true }} // only one time
+            />
             
-            <button type="submit">
+            <motion.button type="submit"
+            initial={{ opacity: 0, x: 350 }}
+            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            transition={{ duration: 3, delay: 3 ,type: 'spring',
+            stiffness: 30 }}
+            viewport={{ once: true }} // only one time
+            >
               <AiOutlineMail />
               Enviar!
-            </button>
+            </motion.button>
 
-            <Socials>
+            <Socials
+            initial={{ opacity: 0, x: '-350' }}
+            whileInView={{ opacity: 1, x: 0 }} //onScroll
+            transition={{ duration: 3, delay: 3.5, type: 'spring',
+            stiffness: 30 }}
+            viewport={{ once: true }} // only one time
+            >
               <h2>Ou por redes sociais:</h2>
               <a href="https://api.whatsapp.com/send?phone=5514998057785" _blank="true">
                 <SiWhatsapp className="whatsapp" />

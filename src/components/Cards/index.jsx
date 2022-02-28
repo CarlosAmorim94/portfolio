@@ -20,7 +20,12 @@ export const Cards = () => {
 
   return (
     cards.map((card, key) => (
-      <Content key={key}>
+      <Content key={key}
+        initial={{ y: 20, opacity: 0}}
+        whileInView={{ y: 0, opacity: 1}}
+        transition={{delay: .5, duration: 1}}
+        viewport={{ once: true }} // only one time
+      >
 
         <ImageStyled>
 

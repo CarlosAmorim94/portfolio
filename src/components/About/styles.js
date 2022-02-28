@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 
 export const AboutStyled = styled.section`
   width: 100%;
-  height: 78vh;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -12,7 +11,7 @@ export const AboutStyled = styled.section`
 
   @media (max-width: 450px) {
     justify-content: space-around;
-    width: 90%;
+    margin: 0 auto;
     height: auto;
     flex-wrap: wrap;
   }
@@ -45,12 +44,11 @@ export const ImageStyled = styled(motion.div)`
 `
 export const TextArea = styled.div`
   width: 600px;
-
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 
   h1 {
     color: var(--blue);
@@ -104,7 +102,8 @@ export const TextArea = styled.div`
 
   @media (max-width: 450px) {
     width: 100%;
-    
+    margin: 0 auto;
+
     p {
       font-size: 1rem;
     }

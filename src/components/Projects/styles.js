@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.section`
   width: 100%;
@@ -18,7 +19,7 @@ export const Container = styled.section`
   }
 
 `
-export const CardsPainel = styled.div`
+export const CardsPainel = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: row;
