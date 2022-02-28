@@ -47,6 +47,10 @@ export const ButtonStyled = styled.button`
   &:hover { // Neon
     box-shadow: 0 0 30px var(--blue);
   }
+  a{
+    color: var(--white);
+    text-decoration: none;
+  }
 `
 
 export const ImageStyled = styled.div`

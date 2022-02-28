@@ -15,7 +15,9 @@ const EmailSent = () => {
         <h1>E-mail enviado com sucesso!</h1>
 
         <ButtonStyled>
-          Voltar
+          <a href='http://carlosamorim.vercel.app/'>
+            Voltar
+          </a>
         </ButtonStyled>
 
       </TextStyled>
