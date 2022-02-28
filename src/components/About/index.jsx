@@ -54,7 +54,7 @@ export const About = () => {
         stiffness: 30 }}
         viewport={{ once: true }} // only one time
       >
-      Me considero <span>ágil, criativo</span>, consistente em aprender e me <span>adaptar as mudança</span>, pronto para superar qualquer desafio! Sempre me dizem que tenho facilidade para fazer novas amizades e lidar com pessoas.
+      Me considero <span>ágil, criativo</span>, consistente em aprender e me <span>adaptar as mudanças</span>, pronto para superar qualquer desafio! Sempre me dizem que tenho facilidade para fazer novas amizades e lidar com pessoas.
       </motion.p>
 
       <motion.p
@@ -66,7 +66,7 @@ export const About = () => {
       >
       Se eu pudesse me definir em 3 palavras, certamente seriam: 
       
-      <span>otimista, criativo e esforçado!</span>
+      <span> otimista, criativo e esforçado!</span>
   
       </motion.p>
 
