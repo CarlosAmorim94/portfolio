@@ -3,7 +3,6 @@ import { motion } from "framer-motion"
 
 export const HeroStyled = styled.main`
   width: 100vw;
-  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
