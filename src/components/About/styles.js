@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export const AboutStyled = styled.section`
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10vh auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

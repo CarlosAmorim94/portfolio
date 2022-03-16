@@ -1,7 +1,8 @@
-import project1 from '../../../public/img/projects/pokenext.png'
-import project2 from '../../../public/img/projects/dtmoney.png'
-import project3 from '../../../public/img/projects/netflix.png'
-import project4 from '../../../public/img/projects/ignews.png'
+import project1 from '../../../public/img/projects/bethehero.png'
+import project2 from '../../../public/img/projects/pokenext.png'
+import project3 from '../../../public/img/projects/dtmoney.png'
+import project4 from '../../../public/img/projects/netflix.png'
+import project5 from '../../../public/img/projects/ignews.png'
 import github from '../../../public/img/icons/GitHub.svg'
 
 
@@ -12,10 +13,11 @@ import { Content, Description, ImageStyled } from "./styles"
 export const Cards = () => {
 
   const cards = [
-    {img: project1, name: "PokeNext", link: "https://github.com/CarlosAmorim94/PokeNext", tech: "NextJs, API, Styled-components, "},
-    {img: project2, name: "DT-Money", link: "https://github.com/CarlosAmorim94/DTMoney", tech: "ReactJs, Typescript, API, Styled-components, ContexAPI, MirageJs"},
-    {img: project3, name: "Clone da Netflix", link: "https://github.com/CarlosAmorim94/Clone-Netflix", tech: "ReactJs, API, CSS"},
-    {img: project4, name: "Ig-News", link: "https://github.com/CarlosAmorim94/IG-News", tech: "NextJs, Typescript, SCSS, Stripe, FaunaDB, auth"},
+    {img: project1, name: "Be The Hero", link: "https://github.com/CarlosAmorim94/Be_The_Hero", tech: "NodeJs, ReactJs, React Native, API, Styled-components, "},
+    {img: project2, name: "PokeNext", link: "https://github.com/CarlosAmorim94/PokeNext", tech: "NextJs, API, Styled-components, "},
+    {img: project3, name: "DT-Money", link: "https://github.com/CarlosAmorim94/DTMoney", tech: "ReactJs, Typescript, API, Styled-components, ContexAPI, MirageJs"},
+    {img: project4, name: "Clone da Netflix", link: "https://github.com/CarlosAmorim94/Clone-Netflix", tech: "ReactJs, API, CSS"},
+    {img: project5, name: "Ig-News", link: "https://github.com/CarlosAmorim94/IG-News", tech: "NextJs, Typescript, SCSS, Stripe, FaunaDB, auth"},
   ]
 
   return (
@@ -23,8 +25,9 @@ export const Cards = () => {
       <Content key={key}
         initial={{ y: 20, opacity: 0}}
         whileInView={{ y: 0, opacity: 1}}
-        transition={{delay: .5, duration: 1}}
+        transition={{ duration: 1}}
         viewport={{ once: true }} // only one time
+        whileHover={{scale: 1.05}}
       >
 
         <ImageStyled>

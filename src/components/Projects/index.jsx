@@ -17,15 +17,7 @@ export const Projects = () => {
       Projetos
     </motion.h1>
     
-    <CardsPainel 
-      initial={{ opacity: 1, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{
-          delayChildren: 0.3,
-          staggerChildren: 0.2,
-        }}
-        viewport={{ once: true }} // only one time
-    >
+    <CardsPainel>
 
       <Cards />
       

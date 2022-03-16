@@ -12,6 +12,7 @@ export const Content = styled(motion.article)`
     width: 90%;
   }
 
+
 `
 
 export const ImageStyled = styled.div`

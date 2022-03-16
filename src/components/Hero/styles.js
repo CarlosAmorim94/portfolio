@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 export const HeroStyled = styled.main`
   width: 100vw;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10vh auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
