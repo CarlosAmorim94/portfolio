@@ -65,7 +65,7 @@ export const Contact = () => {
             transition={{ duration: 3, delay: 1 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
-
+            required
             />
 
             <motion.input 
@@ -78,6 +78,7 @@ export const Contact = () => {
             transition={{ duration: 3, delay: 1.5 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
+            required
             />
 
             <motion.input 
@@ -90,6 +91,7 @@ export const Contact = () => {
             transition={{ duration: 3, delay: 2 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time/
+            required
             />
 
             <motion.textarea  
@@ -101,6 +103,7 @@ export const Contact = () => {
             transition={{ duration: 3, delay: 2.5 ,type: 'spring',
             stiffness: 30 }}
             viewport={{ once: true }} // only one time
+            required
             />
             
             <motion.button type="submit"
