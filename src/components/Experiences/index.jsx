@@ -19,7 +19,7 @@ export const Experiences = () => {
   ];
 
   const fadeProperties = {
-    duration: 5000,
+    duration: 20000,
     canSwipe: false,
   };
 
