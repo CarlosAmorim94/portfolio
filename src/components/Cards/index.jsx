@@ -17,7 +17,7 @@ export const Cards = () => {
 
   const cards = [
 
-    {img: EcommerceIMG, name: "Ecommerce (Em desenvolvimento)", link: "https://github.com/CarlosAmorim94/Photo-Gallery", tech: "NextJs, Typescript, Styled-components, ContextAPI, API"},
+    {img: EcommerceIMG, name: "Ecommerce (Em desenvolvimento)", link: "https://github.com/CarlosAmorim94/Ecommerce", tech: "NextJs, Typescript, Styled-components, ContextAPI, API"},
 
     {img: PhotoGalleryIMG, name: "Photo-Gallery", link: "https://github.com/CarlosAmorim94/Photo-Gallery", tech: "ReactJs, Typescript, Styled-components, Firebase"},
 
