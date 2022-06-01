@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from 'framer-motion'
 
 export const Content = styled(motion.article)`
-  width: 500px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,6 @@ export const Content = styled(motion.article)`
   @media (max-width: 450px) {
     width: 90%;
   }
-
 
 `
 

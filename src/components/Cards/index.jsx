@@ -1,8 +1,11 @@
-import project1 from '../../../public/img/projects/bethehero.png'
-import project2 from '../../../public/img/projects/pokenext.png'
-import project3 from '../../../public/img/projects/dtmoney.png'
-import project4 from '../../../public/img/projects/netflix.png'
-import project5 from '../../../public/img/projects/ignews.png'
+import BeTheHeroIMG from '../../../public/img/projects/bethehero.png'
+import PokeNextIMG from '../../../public/img/projects/pokenext.png'
+import DTMoneyIMG from '../../../public/img/projects/dtmoney.png'
+import NetflixCloneIMG from '../../../public/img/projects/netflix.png'
+import IGNewsIMG from '../../../public/img/projects/ignews.png'
+import PhotoGalleryIMG from '../../../public/img/projects/photogallery.gif'
+import FinanceIMG from '../../../public/img/projects/finance.gif'
+import EcommerceIMG from '../../../public/img/projects/ecommerce.gif'
 import github from '../../../public/img/icons/GitHub.svg'
 
 
@@ -13,11 +16,23 @@ import { Content, Description, ImageStyled } from "./styles"
 export const Cards = () => {
 
   const cards = [
-    {img: project1, name: "Be The Hero", link: "https://github.com/CarlosAmorim94/Be_The_Hero", tech: "NodeJs, ReactJs, React Native, API, Styled-components, "},
-    {img: project2, name: "PokeNext", link: "https://github.com/CarlosAmorim94/PokeNext", tech: "NextJs, API, Styled-components, "},
-    {img: project3, name: "DT-Money", link: "https://github.com/CarlosAmorim94/DTMoney", tech: "ReactJs, Typescript, API, Styled-components, ContexAPI, MirageJs"},
-    {img: project4, name: "Clone da Netflix", link: "https://github.com/CarlosAmorim94/Clone-Netflix", tech: "ReactJs, API, CSS"},
-    {img: project5, name: "Ig-News", link: "https://github.com/CarlosAmorim94/IG-News", tech: "NextJs, Typescript, SCSS, Stripe, FaunaDB, auth"},
+
+    {img: EcommerceIMG, name: "Ecommerce (Em desenvolvimento)", link: "https://github.com/CarlosAmorim94/Photo-Gallery", tech: "NextJs, Typescript, Styled-components, ContextAPI, API"},
+
+    {img: PhotoGalleryIMG, name: "Photo-Gallery", link: "https://github.com/CarlosAmorim94/Photo-Gallery", tech: "ReactJs, Typescript, Styled-components, Firebase"},
+
+    {img: FinanceIMG, name: "Finance", link: "https://github.com/CarlosAmorim94/Financas-Pessoais", tech: "ReactJs, Typescript, Styled-components"},
+
+    {img: BeTheHeroIMG, name: "Be The Hero", link: "https://github.com/CarlosAmorim94/Be_The_Hero", tech: "NodeJs, ReactJs, React Native, API, Styled-components, "},
+
+    {img: PokeNextIMG, name: "PokeNext", link: "https://github.com/CarlosAmorim94/PokeNext", tech: "NextJs, API, Styled-components, "},
+
+    {img: DTMoneyIMG, name: "DT-Money", link: "https://github.com/CarlosAmorim94/DTMoney", tech: "ReactJs, Typescript, API, Styled-components, ContexAPI, MirageJs"},
+
+    {img: NetflixCloneIMG, name: "Clone da Netflix", link: "https://github.com/CarlosAmorim94/Clone-Netflix", tech: "ReactJs, API, CSS"},
+
+    {img: IGNewsIMG, name: "Ig-News", link: "https://github.com/CarlosAmorim94/IG-News", tech: "NextJs, Typescript, SCSS, Stripe, FaunaDB, auth"},
+  
   ]
 
   return (
